@@ -9,18 +9,22 @@ img {
   max-width: 100%;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a {
   text-decoration: none;
-  color: inherit;
   display: inline-block;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+.nav__list:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-67%);
 }
 
 .nav__list {
@@ -36,16 +40,39 @@ nav {
   font-size: 0.8125rem;
 }
 
-.nav__items:first-child {
-  padding-left: 2em;
+.nav__items:first-child,
+.footer__items:first-child {
+  margin-left: 2em;
 }
 
-.nav__items:last-child {
-  padding-right: 2em;
+.nav__links:hover {
+  text-decoration: underline;
+}
+
+.sign-in {
+  margin-right: 2em;
 }
 
 .nav__items + .nav__items {
-  padding-left: 1.5em;
+  margin-left: 1.5em;
+}
+
+.nav__links--bg {
+  background-color: #4683ea;
+  padding: 0.5em 0.75em;
+  margin-top: calc(26px - 0.5em);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.nav__links img {
+  transform: translateY(-15%);
+  opacity: 0.5;
+}
+
+.nav__links:hover img {
+  opacity: 1;
 }
 
 .main-content {
@@ -69,3 +96,73 @@ nav {
   padding: 0.5em 0.8em;
   border-radius: 3px;
 }
+
+.btn__search:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  padding: 0.65em 0;
+  position: absolute;
+  top: 100vh;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__items {
+  list-style: none;
+}
+
+.footer__links {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #5f6368;
+}
+
+.footer__links:hover {
+  text-decoration: underline;
+}
+
+.footer__items:last-child {
+  margin-right: 2em;
+}
+
+.footer__items + .footer__items {
+  margin-left: 1.5em;
+}
+
+input {
+  background: url(img/search.png) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+  width: 550px;
+  height: 45px;
+  border-radius: 100px;
+}
+
+/* .input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+} */

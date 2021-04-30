@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/globe-icon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Google</title>
   </head>
   <body>
@@ -24,8 +28,10 @@
               ><img src="img/google_app.svg" alt="Google apps icon"
             /></a>
           </li>
-          <li class="nav__items"><a href="#" class="nav__links">Sign In</a></li>
         </ul>
+        <div class="sign-in">
+          <a href="#" class="nav__links nav__links--bg">Sign In</a>
+        </div>
       </nav>
     </header>
 
@@ -35,11 +41,42 @@
         <div class="search-input">
           <input type="text" />
         </div>
+        <!-- <div style="max-width: 400px; margin: auto">
+          <div class="input-icons">
+            <i class="fa fa-search icon"></i>
+            <input class="input-field" type="text" />
+          </div>
+        </div> -->
         <div class="btn">
           <a href="#" class="btn__search">Google Search</a>
           <a href="#" class="btn__search">I'm Feeling Lucky</a>
         </div>
       </section>
     </main>
+
+    <footer>
+      <ul class="footer__list">
+        <li class="footer__items">
+          <a href="#" class="footer__links">Advertising</a>
+        </li>
+        <li class="footer__items">
+          <a href="#" class="footer__links">Business</a>
+        </li>
+        <li class="footer__items">
+          <a href="#" class="footer__links">How Search Works</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__items">
+          <a href="#" class="footer__links">Privacy</a>
+        </li>
+        <li class="footer__items">
+          <a href="#" class="footer__links">Terms</a>
+        </li>
+        <li class="footer__items">
+          <a href="#" class="footer__links">Settings</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
